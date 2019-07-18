@@ -1,0 +1,26 @@
+{% extends "user/index.html" %}
+{% load crispy_forms_tags %}
+{% block start %}
+<style media="screen">
+form{
+  width:50%;
+  min-height:100%;
+
+}
+</style>
+
+  <center>
+  <form method="POST" style="border: 1px solid black; margin: 4%; padding:10%; border-radius:1%;">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      {{ form|crispy}}
+    </fieldset>
+   <center>
+    <button style="background: black; font-size: 2rem; padding:1%;" class="btn btn-outline-info" type="submit"><span class="glyphicon glyphicon-log-in"></span> &nbsp; login</button>
+  </center>
+  <br/>
+  <sub style="text-align: left;"><a href="{% url 'register' %}" style="text-decoration: none; color: blue; padding:2%; cursor:pointer; margin-right:2%;">don't have account,sign up</a></sub>
+  </form>
+</center>
+
+{% endblock start %}

@@ -1,0 +1,93 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="project">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="vinayak sharma">
+
+  <title>{{title}}</title>
+
+
+  <!-- bootstrap file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- bootstrap file-->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="{% static "index.css" %}" />
+
+
+  <!-- message here -->
+
+  {% if messages %}
+  {% for message in messages %}
+
+  <script>
+    alert("{{ message }}");
+  </script>
+
+  {% endfor %}
+  {% endif %}
+
+  <!--_______________________________________________-->
+
+
+
+</head>
+
+<body class="container-fluid">
+
+
+  <header class="row">
+
+    <!-- navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" class="styleheader" href="{% url "index" %}">project</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url "index" %}">Home</a></li>
+
+            {% if user.is_authenticated %}
+            <li><a href="{% url "logout" %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp; Logout</a></li>
+            {% else %}
+            <li><a href="{% url "register" %}"><span class="glyphicon glyphicon-user"></span> &nbsp; Sign up</a></li>
+            <li><a href="{% url "login" %}"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Log in</a></li>
+            {% endif %}
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br/>
+  <br>
+  <br>
+  <div class="row">
+    {% block start %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>
