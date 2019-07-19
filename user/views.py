@@ -26,7 +26,7 @@ def register(request):
             #########################mail####################################
             htmly = get_template('user/Email.html')
             d = { 'username': username }
-            subject, from_email, to = 'hello', 'from@example.com', 'itssvinayak@gmail.com'
+            subject, from_email, to = 'hello', 'from@example.com', 'ishaljaiswal.info@gmail.com'
             html_content = htmly.render(d)
             msg = EmailMultiAlternatives(subject, html_content, from_email, [to])
             msg.attach_alternative(html_content, "text/html")

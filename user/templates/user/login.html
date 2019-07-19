@@ -1,14 +1,8 @@
 {% extends "user/index.html" %}
 {% load crispy_forms_tags %}
 {% block start %}
-<style media="screen">
-form{
-  width:50%;
-  min-height:100%;
 
-}
-</style>
-
+ <div class="content-section col-md-8 col-md-offset-2">
   <center>
   <form method="POST" style="border: 1px solid black; margin: 4%; padding:10%; border-radius:1%;">
     {% csrf_token %}
@@ -22,5 +16,5 @@ form{
   <sub style="text-align: left;"><a href="{% url 'register' %}" style="text-decoration: none; color: blue; padding:2%; cursor:pointer; margin-right:2%;">don't have account,sign up</a></sub>
   </form>
 </center>
-
+ </div>
 {% endblock start %}
