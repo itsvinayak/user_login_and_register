@@ -1,4 +1,4 @@
-# project
+# user login and register system implementation in django 
 
-plz add crispy form
-using pip install django-crispy-forms
+
+
