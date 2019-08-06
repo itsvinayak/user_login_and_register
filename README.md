@@ -2,6 +2,9 @@
 
 django based login,logout and register system [django docs on auth system](https://docs.djangoproject.com/en/2.2/topics/auth/default/)
 
+learn how to make : https://www.geeksforgeeks.org/django-sign-up-and-login-with-confirmation-email-python/
+
+---
 
 ![alt text](https://github.com/itsvinayak/user_login_and_register/blob/master/Screenshot%20from%202019-07-23%2007-26-47.png)
 
