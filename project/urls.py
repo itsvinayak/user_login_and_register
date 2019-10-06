@@ -18,9 +18,15 @@ from django.urls import path,include
 from user import views as user_view
 from django.contrib.auth import views as auth
 
+from .router import router
+
 urlpatterns = [
 
     path('admin/', admin.site.urls),
+
+    ######### api path ##########################
+
+    path('api/',include(router.urls)),
 
     #####user related path##########################
     path('',include('user.urls')),

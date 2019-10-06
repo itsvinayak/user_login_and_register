@@ -86,6 +86,11 @@
   <br>
   <div class="row">
     {% block start %}
+    {% if user.is_authenticated %}
+    <center><h1>welcome, here</h1></center>
+    {% else %}
+    <center><h1>log in, plz . . .</h1></center>
+    {% endif %}
     {% endblock %}
   </div>
 </body>
