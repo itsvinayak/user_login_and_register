@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     'crispy_forms',
     'rest_framework',
+    'rest_framework.authtoken',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -73,6 +74,24 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'project.wsgi.application'
+
+
+###################### rest_framework settings ###############
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+               'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES':(
+                'rest_framework.permissions.IsAuthenticated',
+    ),
+
+}
+
+##############################################################
+
+
+
 
 
 # Database
@@ -137,5 +156,5 @@ EMAIL_PORT=587
 EMAIL_USE_TLS=True
 ####################collage email id ##############
 EMAIL_HOST_USER="tacc2325@gmail.com"
-EMAIL_HOST_PASSWORD="vinayak123"
+EMAIL_HOST_PASSWORD="#"
 ##################################################
