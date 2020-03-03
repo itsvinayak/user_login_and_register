@@ -40,7 +40,7 @@ here <b>env/</b> folder contains all dependencies
 <a href="https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/" target="_black">Dockerizing a simple Django app</a>
 
 pull docker image using 
-<pre>$ docker pull itssvinayak/user_login_and_register:latest</pre>
+<pre>$ sudo docker pull itssvinayak/user_login_and_register:latest</pre>
 
 run docker file using
 <pre>$ sudo docker run -p 8000:8000 user_login_and_register</pre>
