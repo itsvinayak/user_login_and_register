@@ -33,6 +33,18 @@ to run requirements.txt
 
 here <b>env/</b> folder contains all dependencies
 
+## use docker to run 
+
+<a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-in-ubuntu/" tagret="_black" >How to Install and Configure Docker in Ubuntu?</a>
+
+<a href="https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/" target="_black">Dockerizing a simple Django app</a>
+
+pull docker image using 
+<pre>$ docker pull itssvinayak/user_login_and_register:latest</pre>
+
+run docker file using
+<pre>$ sudo docker run -p 8000:8000 user_login_and_register</pre>
+
 ## Running locally
 
 <ol>
