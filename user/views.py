@@ -20,9 +20,9 @@ def index(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserRegisterForm(request.POST)
+        form = UserRegisterForm(request.POST) or None
         if form.is_valid():
-            username = request.POST['username']
+            username = request.POST.get('username')
             #########################mail####################################
             htmly = get_template('user/Email.html')
             d = { 'username': username }
@@ -51,8 +51,8 @@ def Login(request):
 
         #AuthenticationForm_can_also_be_used__
 
-        username = request.POST['username']
-        password = request.POST['password']
+        username = request.POST.get('username')
+        password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
         if user is not None:
             form = login(request,user)
