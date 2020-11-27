@@ -56,7 +56,7 @@ run docker file using
   </li>
   <li>
      make database settings and connect it to your local database 
-    <pre>$ cd ./src/iert </pre>
+    <pre>$ cd ./user_login_and_register/project </pre>
     open <b>settings.py</b> file
     <pre>
                 DATABASES = {
