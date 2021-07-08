@@ -1,5 +1,5 @@
 # user login and register system implementation in django 
-![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register?ref=badge_shield)
+![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)
 &nbsp;
 
 
