@@ -1,5 +1,6 @@
 # user login and register system implementation in django 
-![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)&nbsp;
+![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register?ref=badge_shield)
+&nbsp;
 
 
 Django is an open-source python web framework used for rapid development, pragmatic, maintainable, clean design, and secures websites. A web application framework is a toolkit of all components need for application development. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django is fully featured than many other frameworks on the market. It takes care of a lot of hassle involved in the web development; enables users to focus on developing components needed for their application.
@@ -104,3 +105,7 @@ read more at <a href="https://www.geeksforgeeks.org/implement-token-authenticati
 
 
 ![login](https://github.com/itsvinayak/user_login_and_register/blob/master/Screenshot%20from%202019-07-23%2007-27-12.png)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register?ref=badge_large)
