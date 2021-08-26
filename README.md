@@ -1,4 +1,4 @@
-# user login and register system implementation in django 
+# user login and register system implementation in django
 ![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)
 &nbsp;
 
@@ -36,13 +36,13 @@ to run requirements.txt
 
 here <b>env/</b> folder contains all dependencies
 
-## use docker to run 
+## use docker to run
 
 <a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-in-ubuntu/" tagret="_black" >How to Install and Configure Docker in Ubuntu?</a>
 
 <a href="https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/" target="_black">Dockerizing a simple Django app</a>
 
-pull docker image using 
+pull docker image using
 <pre>$ sudo docker pull itssvinayak/user_login_and_register:latest</pre>
 
 run docker file using
@@ -52,11 +52,11 @@ run docker file using
 
 <ol>
   <li>
-      clone repository 
+      clone repository
       <pre>$ git clone https://github.com/itsvinayak/user_login_and_register.git</pre>
   </li>
   <li>
-     make database settings and connect it to your local database 
+     make database settings and connect it to your local database
     <pre>$ cd ./user_login_and_register/project </pre>
     open <b>settings.py</b> file
     <pre>
@@ -75,11 +75,11 @@ run docker file using
    set this part according to needs.
   </li>
   <li>
-    run migrations 
+    run migrations
     <pre>$ python manage.py migrate</pre>
   </li>
   <li>
-    now, runserver 
+    now, runserver
     <pre>$ python manage.py runserver</pre>
   </li>
  </ol>
@@ -109,3 +109,15 @@ read more at <a href="https://www.geeksforgeeks.org/implement-token-authenticati
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fitsvinayak%2Fuser_login_and_register?ref=badge_large)
+
+
+
+# Errors
+
+## error when trying to migrate or attempting to runserver
+
+Simply try "python3 manage.py migrate" or "python3 manage.py runserver" instead
+
+or
+
+Django is not installed (or installed properly)
