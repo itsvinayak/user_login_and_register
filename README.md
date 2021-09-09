@@ -1,4 +1,4 @@
-# user login and register system implementation in django
+# User login and register system implementation in django
 ![](https://img.shields.io/github/repo-size/itsvinayak/user_login_and_register.svg?label=Repo%20size&style=flat-square)&nbsp;![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)
 &nbsp;
 
@@ -36,7 +36,7 @@ to run requirements.txt
 
 here <b>env/</b> folder contains all dependencies
 
-## use docker to run
+## Use docker to run
 
 <a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-in-ubuntu/" tagret="_black" >How to Install and Configure Docker in Ubuntu?</a>
 
@@ -60,17 +60,17 @@ run docker file using
     <pre>$ cd ./user_login_and_register/project </pre>
     open <b>settings.py</b> file
     <pre>
-                DATABASES = {
-            "default": {
-                "ENGINE": "django.db.backends.mysql",
-                "NAME": "iert",
-                "USER": "root",
-                "HOST": "localhost",
-                "PASSWORD": "vinayak",
-                "PORT": "3306",
-                "OPTIONS": {"sql_mode": "traditional"},
-            }
+      DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "iert",
+            "USER": "root",
+            "HOST": "localhost",
+            "PASSWORD": "vinayak",
+            "PORT": "3306",
+            "OPTIONS": {"sql_mode": "traditional"},
         }
+      }
    </pre>
    set this part according to needs.
   </li>
