@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from user import views as user_view
-from django.contrib.auth import views as auth
+from django.contrib.auth.views import LogoutView
 
 from .router import router
 from rest_framework.authtoken import views
@@ -33,7 +33,7 @@ urlpatterns = [
     #####user related path##########################
     path('', include('user.urls')),
     path('login/', user_view.Login, name='login'),
-    path('logout/', auth.LogoutView.as_view(template_name='user/index.html'), name='logout'),
+    path('logout/',user_view.logout_user, name='logout'),
     path('register/', user_view.register, name='register'),
 
 ]
