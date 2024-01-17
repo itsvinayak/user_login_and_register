@@ -1,2 +1,10 @@
 - name: Run Python black code formatter
   uses: DataDog/action-py-black-formatter@v2.5
+  with:
+    # Add any additional configuration options here if needed
+    main_branch: # optional, default is main
+    quiet_mode: # optional, default is false
+    print_diff_mode: # optional, default is false
+    check_mode: # optional, default is false
+    only_changed_files: # optional, default is false
+    base_commit: # optional, default is
