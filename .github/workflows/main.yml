@@ -1,2 +1,2 @@
-name: Run python black code formatter
-uses: DataDog/action-py-black-formatter@v2.5
+- name: Run Python black code formatter
+  uses: DataDog/action-py-black-formatter@v2.5
