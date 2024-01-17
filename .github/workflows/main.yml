@@ -3,7 +3,7 @@ name: Run Python black code formatter
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   run-black-formatter:
