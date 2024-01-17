@@ -21,13 +21,15 @@
   <!-- bootstrap file-->
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="{% static "index.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% static " index.css" %}" />
 
 
   <!-- message here -->
@@ -63,17 +65,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" class="styleheader" href="{% url "index" %}">project</a>
+          <a class="navbar-brand" class="styleheader" href="{% url " index" %}">project</a>
         </div>
         <div class="collapse navbar-collapse" id="mainNavBar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{% url "index" %}">Home</a></li>
+            <li><a href="{% url " index" %}">Home</a></li>
 
             {% if user.is_authenticated %}
-            <li><a href="{% url "logout" %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp; Logout</a></li>
+            <li><a href="{% url " logout" %}"><span class="glyphicon glyphicon-log-out"></span> &nbsp; Logout</a></li>
             {% else %}
-            <li><a href="{% url "register" %}"><span class="glyphicon glyphicon-user"></span> &nbsp; Sign up</a></li>
-            <li><a href="{% url "login" %}"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Log in</a></li>
+            <li><a href="{% url " register" %}"><span class="glyphicon glyphicon-user"></span> &nbsp; Sign up</a></li>
+            <li><a href="{% url " login" %}"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Log in</a></li>
             {% endif %}
 
           </ul>
@@ -81,15 +83,19 @@
       </div>
     </nav>
   </header>
-  <br/>
+  <br />
   <br>
   <br>
   <div class="row">
     {% block start %}
     {% if user.is_authenticated %}
-    <center><h1>welcome back {{user.username}}!</h1></center>
+    <center>
+      <h1>welcome back {{user.username}}!</h1>
+    </center>
     {% else %}
-    <center><h1>log in, plz . . .</h1></center>
+    <center>
+      <h1>log in, plz . . .</h1>
+    </center>
     {% endif %}
     {% endblock %}
   </div>
